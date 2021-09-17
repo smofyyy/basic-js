@@ -15,9 +15,5 @@ import { NotImplementedError } from '../extensions/index.js';
  */
 export default function createDreamTeam(members) {
   // throw new NotImplementedError('Not implemented');
-  let b = members.map(function(item) {
-    return item.trim().slice(0, 1).toUpperCase()
-  });
-  let c = b.sort().join("")
-  return c
+  return members.map(item => item.trim().slice(0, 1).toUpperCase().sort().join(""))
 }
